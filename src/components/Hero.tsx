@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="w-full relative">
         <div className="absolute w-full h-screen z-10 bg-gradient-to-b from-black/80 to-transparent" />
         <div className="absolute w-full h-screen z-20 flex justify-center items-center flex-col gap-5">
-          <h1 className="text-center text-white font-semibold text-7xl">
+          <h1 className="text-center text-white font-semibold text-5xl">
             CyberLogic <br /> Labs
           </h1>
           <div className="flex gap-3">

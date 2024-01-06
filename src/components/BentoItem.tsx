@@ -29,9 +29,7 @@ export const BentoItem = ({
         <div
           className={`flex flex-col p-6 gap-3 h-full justify-end text-balance text-[${fontColor}] text-${textPosition}`}
         >
-          <h2 className="text-3xl font-extrabold">
-            {title}
-          </h2>
+          <h2 className="text-3xl font-extrabold">{title}</h2>
           <h3 className="text-xl hidden md:block">{description}</h3>
         </div>
       </article>
