@@ -1,34 +1,61 @@
 import FacebookSVG from "../assets/svg/FacebookSVG";
-import { LogoSVG } from "../assets/svg/LogoSVG";
 import TwitterSVG from "../assets/svg/TwitterSVG";
 import InstagramSVG from "../assets/svg/InstagramSVG";
+import CallSVG from "../assets/svg/CallSVG";
 export const Hero = () => {
   return (
     <>
       <div className="w-full relative">
+        <div className="absolute w-full h-screen z-10 bg-gradient-to-b from-black/80 to-transparent" />
         <div className="absolute w-full h-screen z-20 flex justify-center items-center flex-col gap-5">
-          <LogoSVG fill="#fff" className="lg:w-[778px] lg:h-[272px] md:w-[600px] md:h-[250px] sm:w-[500px] sm:h-[190px] w-[390px] h-[160px]" />
-          {/* <a href="" className="text-white text-2xl bg-stone-700 p-2 rounded-md">
-          Agenda aquí
-        </a> */}
+          <h1 className="text-center text-white font-semibold text-7xl">
+            CyberLogic <br /> Labs
+          </h1>
           <div className="flex gap-3">
-            <FacebookSVG width={"30px"} height={"30px"} fill="white" />
-            <TwitterSVG width={"30px"} height={"30px"} fill="white" />
-            <InstagramSVG width={"30px"} height={"30px"} fill="white" />
-          </div>
-        </div>
-        <div className="absolute bottom-10 left-0 w-full z-20 flex justify-center items-center">
-          <div className="flex gap-3">
-            <a href="" className="flex gap-2">
-              <div className="bg-white w-3 h-3 rounded-full animate-bounce" />
-              <div className="bg-white w-3 h-3 rounded-full animate-bounce" />
-              <div className="bg-white w-3 h-3 rounded-full animate-bounce" />
+            <a href="#">
+              <FacebookSVG
+                width={"30px"}
+                height={"30px"}
+                fill="white"
+                className="animate-bounce"
+              />
+            </a>
+            <a href="#">
+              <TwitterSVG
+                width={"30px"}
+                height={"30px"}
+                fill="white"
+                className="animate-bounce"
+              />
+            </a>
+            <a href="#">
+              <InstagramSVG
+                width={"30px"}
+                height={"30px"}
+                fill="white"
+                className="animate-bounce"
+              />
+            </a>
+            <a href="#">
+              <CallSVG
+                width={"30px"}
+                height={"30px"}
+                fill="white"
+                className="animate-bounce"
+              />
             </a>
           </div>
+          {/* <a
+            href=""
+            className="text-white text-2xl bg-stone-700 p-2 rounded-md"
+          >
+            Agenda aquí
+          </a> */}
         </div>
+
         <video
           className="w-full h-screen object-cover object-top"
-          src="./video-hero2.mp4"
+          src="./team-hero.mp4"
           autoPlay
           loop
           muted
@@ -38,11 +65,6 @@ export const Hero = () => {
           }}
         />
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 };

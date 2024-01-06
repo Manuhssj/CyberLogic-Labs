@@ -1,3 +1,5 @@
+import { Backgound } from "./components/Backgound";
+import { Bento } from "./components/Bento";
 import { Hero } from "./components/Hero";
 // import { Navbar } from "./components/Navbar";
 function App() {
@@ -5,6 +7,8 @@ function App() {
     <>
       {/* <Navbar /> */}
       <Hero />
+      <Bento />
+      <Backgound />
     </>
   );
 }
